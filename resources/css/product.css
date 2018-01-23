@@ -5,15 +5,13 @@ body{
 }
 #prod-container{
     padding-bottom: 20px;
-    background-color: #efeffe;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     float: left;
 }
 .prod-box{
     margin-top: 50px;
     margin-left: 50px;
-    padding-top: 10px;
     width: 250px;
     height: 300px;
     float: left;
