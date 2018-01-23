@@ -133,7 +133,7 @@ body{
     padding-bottom: 20px;
     margin-top: 50px;
     width: 250px;
-    height: auto;
+    height: 375px;
     float: left;
     border-radius: 7px;
     background-color: white;
@@ -146,6 +146,7 @@ body{
     padding-left: 10px;
     padding-right: 10px;
     width: 250px;
+    height: 175px;
     float: left;
     /*border: 1px solid;*/
     border-radius: 7px;
@@ -193,39 +194,4 @@ body{
 }
 .product_two{
     margin-left: 20px;
-}
-#prod-container{
-    padding-bottom: 20px;
-    background-color: #efeffe;
-    width: 100%;
-    height: auto;
-    float: left;
-}
-.prod-box{
-    margin-left: 100px;
-    padding-top: 10px;
-    width: 250px;
-    float: left;
-    border-radius: 7px;
-    overflow: hidden;
-    position: relative;
-}
-.prod-box > img{
-    max-width: 100%;
-}
-.prod-trans{
-    background: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    opacity: 0;
-    transition: all .5s ease;
-}
-.prod-trans:hover{
-    opacity: 1;
-    transition: all .5s ease;
 }
