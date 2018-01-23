@@ -1,0 +1,231 @@
+body{
+    margin:0;
+    font-family: Roboto;
+    font-size: 14px;
+}
+.clear{
+    float: none;
+    clear: both;
+}
+.center{
+    width: 1024px;
+    margin: 0 auto;
+}
+/*header navigation*/
+#header{
+    padding: 40px 0;
+    background-color: #efeffe;
+}
+#header .navigation{
+    float: left;
+}
+#header .login{
+    float: right;
+}
+#header .navigation ul{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0;
+}
+#header .navigation ul li{
+    display: inline-block;
+    font-size: 18px;
+    font-family: Roboto;
+}
+#header .navigation ul li a{
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+#header .navigation ul li a:hover{
+    color: #295F4E;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+#header .login ul{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0;
+}
+#header .login ul li{
+    display: inline-block;
+    font-size: 18px;
+    font-family: Roboto;
+}
+#header .login ul li a{
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+#header .login ul li a:hover{
+    color: #295F4E;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+/*banner*/
+#banner{
+    background-color: #efeffe;
+    background: url("../images/home.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 125px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#banner h1{
+    font-family: Roboto;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+#banner h2{
+    margin-top: 50px;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+#banner .btn-link {
+    margin-top: 50px;
+    border: solid 2px #FFFFFF;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+}
+#banner .btn-link:hover {
+    cursor: pointer;
+    background: #FFFFFF;
+    color: #000000;
+}
+/*grid*/
+#product {
+    padding-bottom: 20px;
+    background-color: #efeffe;
+    width: 100%;
+    height: auto;
+    float: left;
+
+}
+.product_section_title{
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    display: inline-block;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: bold;
+}
+.product_one{
+    padding-bottom: 20px;
+    margin-top: 50px;
+    width: 250px;
+    height: auto;
+    float: left;
+    border-radius: 7px;
+    background-color: white;
+    border-bottom: 2px solid darkgray;
+    border-left: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+}
+.product_img{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 250px;
+    float: left;
+    /*border: 1px solid;*/
+    border-radius: 7px;
+    overflow: hidden;
+}
+.product_img img{
+    width: 100%;
+}
+.product_text {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    width: 250px;
+    float: left;
+}
+.product_desc {
+    width: 250px;
+    float: left;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.product_price{
+    width: 250px;
+    float: left;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+}
+.button_buy{
+    float: right;
+    padding: 10px;
+    background-color: #295F4E;
+    border-radius: 7px;
+    color: #FFFFFF;
+}
+.button_buy:hover{
+    cursor: pointer;
+    background: #6DB193;
+    color: #FFFFFF;
+}
+.product_two{
+    margin-left: 20px;
+}
+#prod-container{
+    padding-bottom: 20px;
+    background-color: #efeffe;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.prod-box{
+    margin-left: 100px;
+    padding-top: 10px;
+    width: 250px;
+    float: left;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+}
+.prod-box > img{
+    max-width: 100%;
+}
+.prod-trans{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.prod-trans:hover{
+    opacity: 1;
+    transition: all .5s ease;
+}
