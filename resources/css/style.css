@@ -2,8 +2,10 @@ body {
     margin: 0;
     font-family: Roboto;
     font-size: 14px;
+    background: url("../images/bg.png");
 }
-#fab{
+
+#fab {
     padding: 15px;
     /*padding-left: 20px;*/
     /*padding-right: 20px;*/
@@ -16,8 +18,18 @@ body {
     right: 2%;
     bottom: 3%;
 }
-#fab img{
+
+#fab img {
     width: 100%;
+}
+
+.navbar-default {
+    background: url("../images/bg.png");
+}
+
+.navbar-default .navbar-nav li {
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .clear {
@@ -43,9 +55,11 @@ body {
 #header .login {
     float: right;
 }
+
 #header .dropdown {
     float: right;
 }
+
 .dropbtn {
     font-family: Roboto;
     border-radius: 7px;
@@ -68,7 +82,7 @@ body {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 7px;
 }
@@ -80,7 +94,9 @@ body {
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -150,7 +166,7 @@ body {
 
 /*banner*/
 #banner {
-    background: url("../images/home.png") no-repeat center center;
+    background: url("../images/home.png") no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;
     padding: 125px;
@@ -212,6 +228,7 @@ body {
 }
 
 .product_one {
+    margin-left: 30px;
     padding-bottom: 20px;
     margin-top: 50px;
     width: 250px;
@@ -291,9 +308,10 @@ body {
     color: #FFF;
     width: 100%;
     height: auto;
-    padding: 40px 0;
+    padding: 100px 0;
     background: url("../images/bg_footer.jpeg");
 }
+
 #footer .store {
     float: left;
 }
@@ -303,36 +321,89 @@ body {
 }
 
 .store {
-    margin-top: 30px;
-    width: 20%;
-    margin-left: 100px;
-}
-
-.store h3 {
-    text-align: center;
-    font-family: Roboto;
-    margin-bottom: 7px;
+    /*margin-top: 25px;*/
+    width: 50%;
 }
 
 .store p {
-    font-family: Roboto;
-    margin-top: 10px;
+    font-family: "Bebas Neue";
+    /*margin-top: 10px;*/
     text-align: center;
-    font-size: 14px;
+    font-size: 30px;
 }
-.opening{
-    margin-top: 30px;
-    width: 20%;
-    margin-right: 150px;
+
+.opening {
+    /*margin-top: 40px;*/
+    width: 30%;
+    margin-right: 125px;
 }
-.opening h3{
+
+.opening p {
+    font-family: "Bebas Neue";
+    /*margin-top: 10px;*/
     text-align: center;
-    font-family: Roboto;
-    margin-bottom: 7px;
+    font-size: 30px;
 }
-.opening p{
-    font-family: Roboto;
-    margin-top: 10px;
+
+#contact_info {
+    padding-bottom: 20px;
+    background: url("../images/bg.png");
+    width: 100%;
+    height: auto;
+    float: left;
+
+}
+
+#bannerAbout {
+    padding-bottom: 50px;
+    /*!*background: url("../images/jo.jpg") no-repeat center ;*!*/
+    /*-webkit-background-size: cover;*/
+    /*background-size: cover;*/
+    /*padding: 125px;*/
+    /*text-align: center;*/
+    /*color: #FFFFFF;*/
+}
+#contact{
+    background: url("../images/bg_contact.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+}
+#form {
     text-align: center;
-    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px 400px;
+}
+#regis {
+    width: 100%;
+    background-color: #FFFFFF;
+    /*opacity: 0.8;*/
+    padding: 40px 0px;
+    border-radius: 10px;
+}
+#button{
+    width: 250px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: 0px;
+}
+#upload{
+    width: 250px;
+    margin-left:150px ;
+}
+#regis input[type="submit"]{
+    font-family: Roboto;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 40px;
+    background: #295F4E;
+    font-size: 20px;
+    color: #FFFFFF;
+    border-radius: 7px;
+}
+#regis input[type="submit"]:hover{
+    cursor: pointer;
+    background: #6DB193;
+    color: #FFFFFF;
 }
