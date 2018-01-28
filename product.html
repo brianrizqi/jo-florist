@@ -4,39 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="resources/css/product.css" rel="stylesheet" type="text/css">
+    <link href="resources/css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <title>Product</title>
 </head>
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="home.html">Jo-Florist</a>
-            </div>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home.html">Jo-Florist</a>
+        </div>
+        <!--<div class="collapse navbar-collapse" id="myNavbar">-->
             <ul class="nav navbar-nav">
                 <li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-                <li class="active"><a href="product.html"><span class="glyphicon glyphicon-shopping-cart"></span> Product</a></li>
+                <li class="active"><a href="product.html"><span class="glyphicon glyphicon-shopping-cart"></span>
+                    Product</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
             </ul>
         </div>
-    </nav>
-    <br>
+    <!--</div>-->
+</nav>
+<br>
 
-    
-    <div id="banner">
 
-        <div class="center">
+<div id="banner1">
 
-            <img src="resources/images/produk1.png" width="100%">
+    <div class="center">
 
-        </div>
+        <img src="resources/images/produk1.png" width="100%">
 
     </div>
-    
+
+</div>
 
 
-
+<div class="container">
     <div id="prod-container">
         <div class="prod-box">
             <img src="resources/images/bg_login.jpg" alt="produk">
@@ -44,7 +53,9 @@
                 <div class="prod-feature">
                     <p>Bunga 1</p>
                     <p>Price : Rp.10.000</p>
-                    <a href="detailProduct.html"><button type="button" class="btn btn-success">Detail</button></a>
+                    <a href="detailProduct.html">
+                        <button type="button" class="btn btn-success">Detail</button>
+                    </a>
                 </div>
             </div>
 
@@ -150,40 +161,46 @@
         </div>
 
     </div>
-    <!--footer-->
-    <div id="footer">
-        <div class="center">
-            <div class="store">
-                <p>Our Store</p>
-                <p>Jalan Sumatra no 163 Sumbersari, Jember</p>
-                <p>Phone: 0821-4317-2060</p>
-                <p>Email: jo_florist@gmail.com</p>
+</div>
+<!--footer-->
+<div id="footer">
+    <div class="center">
+        <div class="store">
+            <p>Our Store</p>
+            <p>Jalan Sumatra no 163 Sumbersari, Jember</p>
+            <p>Phone: 0821-4317-2060</p>
+            <p>Email: jo_florist@gmail.com</p>
 
-            </div>
-            <div class="opening">
-                <p>Opening Hours</p>
-                <p>Mon - Sat : 08.00 - 18.00 WIB</p>
-                <p>Sunday : Closed</p>
-            </div>
         </div>
-        <div class="clear"></div>
-
+        <div class="opening">
+            <p>Opening Hours</p>
+            <p>Mon - Sat : 08.00 - 18.00 WIB</p>
+            <p>Sunday : Closed</p>
+        </div>
     </div>
-    <div id="contact_info">
-        <div class="container">
-            <div class="product_section_title">Cari Kami disini</div>
-        </div>
-        <br>
-        <div class="map">
-            <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15797.322352953557!2d113.7106291!3d-8.1694109!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf05adf22f97e2722!2sJo+Florist!5e0!3m2!1sid!2sid!4v1516972907117">
+
+
+</div>
+<div id="contact_info">
+    <div class="container">
+        <div class="product_section_title">Cari Kami disini</div>
+    </div>
+    <br>
+    <div class="map">
+        <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15797.322352953557!2d113.7106291!3d-8.1694109!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf05adf22f97e2722!2sJo+Florist!5e0!3m2!1sid!2sid!4v1516972907117">
         </iframe>
         <br>
         <small><a
-            href="https://www.google.co.id/maps/place/Jo+Florist/@-8.1694109,113.7106291,15z/data=!4m2!3m1!1s0x0:0xf05adf22f97e2722?sa=X&ved=0ahUKEwjWme2G3PXYAhVFvo8KHcHNDcMQ_BIIfjAK"
-            style="color:#666;text-align:left;font-size:12px">View Larger Map</a></small>
-        </div>
+                href="https://www.google.co.id/maps/place/Jo+Florist/@-8.1694109,113.7106291,15z/data=!4m2!3m1!1s0x0:0xf05adf22f97e2722?sa=X&ved=0ahUKEwjWme2G3PXYAhVFvo8KHcHNDcMQ_BIIfjAK"
+                style="color:#666;text-align:left;font-size:12px">View Larger Map</a></small>
     </div>
+</div>
+<a href="#">
+    <div id="fab">
+        <img src="resources/images/whatsapp-logo.png">
+    </div>
+</a>
 
 </body>
 </html>

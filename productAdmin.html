@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="resources/css/productAdmin.css" rel="stylesheet" type="text/css">
+    <link href="resources/css/product.css" rel="stylesheet" type="text/css">
+    <link href="resources/css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <title></title>
 </head>
@@ -11,385 +12,396 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="#">Jo-Florist</a>
         </div>
-        <ul class="nav navbar-nav">
-            <li><a href="homeAdmin.html">Home</a></li>
-            <li class="active"><a href="productAdmin.html">Product</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="tambahProduk.html">Tambah Produk</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-        </ul>
+        <!--<div class="collapse navbar-collapse" id="myNavbar">-->
+            <ul class="nav navbar-nav">
+                <li><a href="homeAdmin.html">Home</a></li>
+                <li class="active"><a href="productAdmin.html">Product</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="tambahProduk.html">Tambah Produk</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+            </ul>
+        <!--</div>-->
     </div>
 </nav>
 <br>
-<div id="banner">
+<div id="banner1">
 
     <div class="center">
 
-        <img src="resources/images/produk1.png">
+        <img src="resources/images/produk1.png" width="100%">
 
     </div>
 
 </div>
 
 <div class="container">
-<div id="prod-container">
-    <div class="prod-box">
-        <img src="resources/images/bg_login.jpg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.10.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+    <div id="prod-container">
+        <div class="prod-box">
+            <img src="resources/images/bg_login.jpg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.10.000</p>
+                    <a href="detailProduct.html">
+                        <button type="button" class="btn btn-success">Detail</button>
+                    </a>
+                    <a href="editProduct.html">
+                        <button type="button" class="btn btn-primary">Edit</button>
+                    </a>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar1.jpg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 2</p>
-                <p>Price : Rp.15.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar1.jpg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 2</p>
+                    <p>Price : Rp.15.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="prod-box">
-        <img src="resources/images/gambar2.jpeg" alt="produk">
-        <div class="prod-trans">
-            <div class="prod-feature">
-                <p>Bunga 1</p>
-                <p>Price : Rp.17.000</p>
-                <button type="button" class="btn btn-success">Detail</button>
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        <div class="prod-box">
+            <img src="resources/images/gambar2.jpeg" alt="produk">
+            <div class="prod-trans">
+                <div class="prod-feature">
+                    <p>Bunga 1</p>
+                    <p>Price : Rp.17.000</p>
+                    <button type="button" class="btn btn-success">Detail</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
-</div>
 
 </div>
 <!--footer-->
@@ -409,7 +421,7 @@
             <p>Sunday : Closed</p>
         </div>
     </div>
-   </div>
+</div>
 
 
 <div id="contact_info">
