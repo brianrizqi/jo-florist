@@ -1,10 +1,16 @@
 body {
-    background-image: url("../images/bg_detail.jpg");
+    background: url("../images/bg_detail.jpg")center center;
     background-repeat: no-repeat;
-    background-size: 100% 800px;
+    background-size: cover;
+}
+@media only screen and (max-width: 360px){
+    body{
+        /*background-size: auto;*/
+    }
+
 }
 .product-card{
-    width: 425px;
+    width: 60%;
     position: relative;
     background: #fafafa;
     /*border-radius: 7px;*/
@@ -15,7 +21,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    width: 100%;
+    height: auto;
     padding: 30px;
     background: #f0f0f0;
 }

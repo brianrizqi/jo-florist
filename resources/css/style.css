@@ -1,12 +1,12 @@
 body {
-    margin: 0;
+    /*margin: 0;*/
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 100%;
     background: url("../images/bg.png");
 }
 
 #fab {
-    padding: 15px;
+    padding: 20px;
     /*padding-left: 20px;*/
     /*padding-right: 20px;*/
     border-radius: 50px;
@@ -15,8 +15,8 @@ body {
     color: #FFF;
     background-color: limegreen;
     position: fixed;
-    right: 2%;
-    bottom: 3%;
+    right: 3%;
+    bottom: 5%;
 }
 
 #fab img {
@@ -37,150 +37,30 @@ body {
     clear: both;
 }
 
-.center {
-    width: 60%;
-    min-width: 300px;
-    margin: 0 auto;
-}
-
-/*header navigation*/
-#header {
-    padding: 40px 0;
-    background: url("../images/bg.png");
-}
-
-#header .navigation {
-    float: left;
-}
-
-#header .login {
-    float: right;
-}
-
-#header .dropdown {
-    float: right;
-}
-
-.dropbtn {
-    font-family: Roboto;
-    border-radius: 7px;
-    background-color: #295F4E;
-    color: white;
-    padding: 15px;
-    font-size: 15px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    font-family: Roboto;
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 7px;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #295F4E;
-}
-
-#header .navigation ul {
-    list-style-type: none;
-    padding: 0;
-    margin-left: 0;
-}
-
-#header .navigation ul li {
-    display: inline-block;
-    font-size: 18px;
-    font-family: Roboto;
-}
-
-#header .navigation ul li a {
-    display: inline-block;
-    padding: 10px;
-    text-transform: uppercase;
-    color: #000000;
-    text-decoration: none;
-}
-
-#header .navigation ul li a:hover {
-    color: #295F4E;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-
-#header .login ul {
-    list-style-type: none;
-    padding: 0;
-    margin-left: 0;
-}
-
-#header .login ul li {
-    display: inline-block;
-    font-size: 18px;
-    font-family: Roboto;
-}
-
-#header .login ul li a {
-    display: inline-block;
-    padding: 10px;
-    text-transform: uppercase;
-    color: #000000;
-    text-decoration: none;
-}
-
-#header .login ul li a:hover {
-    color: #295F4E;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
+/*.center {*/
+    /*width: 60%;*/
+    /*min-width: 100px;*/
+    /*margin: 0 auto;*/
+/*}*/
 
 /*banner*/
 #banner {
     background: url("../images/home.png") no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;
-    padding: 125px;
+    padding: 50px;
     text-align: center;
     color: #FFFFFF;
+    /*min-width: 350px;*/
 }
 
 #banner h1 {
     font-family: Roboto;
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
     font-weight: normal;
 }
+
 
 #banner h2 {
     margin-top: 50px;
@@ -306,10 +186,13 @@ body {
 }
 
 #footer {
+    margin-top: 50px;
     color: #FFF;
     width: 100%;
-    height: auto;
-    padding: 100px 0;
+    height: 400px;
+    /*padding: 100px 0;*/
+    padding-top: 50px;
+    padding-bottom: 50px;
     background: url("../images/bg_footer.jpeg");
 }
 
@@ -324,26 +207,27 @@ body {
 .store {
     /*margin-top: 25px;*/
     width: 50%;
+    margin-left: 5%;
 }
 
 .store p {
     font-family: "Bebas Neue";
     /*margin-top: 10px;*/
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .opening {
-    /*margin-top: 40px;*/
+    /*margin-top: 50px;*/
     width: 30%;
-    margin-right: 125px;
+    margin-right: 5%;
 }
 
 .opening p {
     font-family: "Bebas Neue";
     /*margin-top: 10px;*/
     text-align: center;
-    font-size: 30px;
+    font-size: 27px;
 }
 
 #contact_info {
@@ -367,37 +251,41 @@ body {
 #contact{
     background: url("../images/bg_contact.jpeg");
     background-repeat: no-repeat;
-    background-size: 100% 800px;
+    background-size: cover;
 }
 #form {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin: 20px 400px;
+    /*margin: 20px 400px;*/
+    opacity: 0.8;
+    /*width: 100%;*/
+
 }
 #regis {
-    width: 100%;
+    /*min-width: 250px;*/
+    /*width: 100%;*/
+    height: auto;
     background-color: #FFFFFF;
-    /*opacity: 0.8;*/
     padding: 40px 0px;
     border-radius: 10px;
 }
 #button{
-    width: 250px;
+    width: 50%;
     padding: 5px;
     border-radius: 5px;
     outline: 0px;
 }
 #upload{
-    width: 250px;
+    width: 50%;
     margin-left:150px ;
 }
 #regis input[type="submit"]{
     font-family: Roboto;
     border: none;
     outline: none;
-    width: 100px;
-    height: 40px;
+    width: 25%;
+    height: auto;
     background: #295F4E;
     font-size: 20px;
     color: #FFFFFF;
@@ -407,4 +295,22 @@ body {
     cursor: pointer;
     background: #6DB193;
     color: #FFFFFF;
+}
+@media only screen and (max-width: 480px) {
+    #banner h1{
+        font-family: Roboto;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    .store p{
+        font-size: 20px;
+    }
+    .opening p{
+        font-size: 20px;
+    }
+}
+.row-no-margin{
+    margin-left: 0px;
+    margin-right: 0px;
 }
