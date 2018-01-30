@@ -10,21 +10,20 @@
     <title></title>
 </head>
 <body>
-
 <?php foreach ($posts as $item) {
-    
+    # code...
  ?>
 <div class="product-card">
     <div class="product-image">
         <img src="foto_produk/<?php echo $item['foto_produk']; ?>" width="100%">
     </div>
     <div class="product-details">
-        <span class="product-code"><?php echo $item['kode_produk']; ?></span>
-        <h4><?php echo $item['nama_produk'] ?></h4>
+        <span class="product-code"><?php echo $item['kode_produk'] ?></span>
+        <h4><?php echo $item['nama_produk']; ?></h4>
         <p><?php echo $item['deskripsi']; ?></p>
         <div class="product-bottom">
             <div class="product-price">
-                 <?php echo "Rp " . number_format($item['harga'], 0, ".", "."); ?>
+                 <?php echo "Rp ". number_format($item['harga'],0,".","."); ?>
             </div>
         </div>
     </div>

@@ -61,10 +61,20 @@ Class ProdukController{
 	}
 
 	public function detailProduk(){
-		if (isset($_SESSION['login_user'])) {
 			
-			$posts=Produk::lihatProduk();
-			require_once('views/admin/productAdmin.php');
+			$id_produk=$_GET['id_produk'];
+			$posts=Produk::lihatDetailProduk($id_produk);
+			require_once('views/pages/detailProduct.php');
+	
+
+	}
+
+		public function detailProdukAdmin(){
+		if (isset($_SESSION['login_user'])) {
+
+			$id_produk=$_GET['id_produk'];
+			$posts=Produk::lihatDetailProduk($id_produk);
+			require_once('views/admin/detailProductAdmin.php');
 		}
 		else{
 			header('location:http://localhost/jo-florist/index.php/user/login');
@@ -91,9 +101,10 @@ Class ProdukController{
 		$posts=Produk::updateDataProduk($_POST['id_produk'],$_POST["nama_produk"],$_POST["harga"],$_POST["jumlah_stok"],$_POST["deskripsi"]);
 		header('location:index.php?controller=produk&action=showAllProdukPenjual');
 	}
-	public function deleteDataProdukPenjual(){
-		$posts=Produk::deleteDataProdukPenjual($_GET['id_produk']);
-		header('location:index.php?controller=produk&action=showAllProdukPenjual');
+	public function deleteProdukAdmin(){
+		$id_produk=$_GET['id_produk'];
+		$posts=Produk::deleteProdukAdmin($id_produk);
+		header('location:http://localhost/jo-florist/index.php/produk/lihatProduk');
 	}
 
 /*	public function detailProduk(){

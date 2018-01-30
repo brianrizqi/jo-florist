@@ -154,6 +154,9 @@ body {
     font-size: 14px;
     padding-left: 10px;
     padding-right: 10px;
+    white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
 }
 
 .product_price {

@@ -6,7 +6,7 @@ session_start();
 <html lang="en">
 
 <head>
-  <base href="http://192.168.8.99/jo-florist/"></base>
+  <base href="http://localhost/jo-florist/"></base>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">

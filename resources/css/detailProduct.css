@@ -54,6 +54,8 @@ body {
     line-height: 22px;
     margin-bottom: 18px;
     color: #999;
+    word-wrap: break-word;
+
 }
 .product-bottom{
     overflow: hidden;

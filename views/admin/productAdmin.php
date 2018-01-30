@@ -75,16 +75,18 @@
                 </div>
                 <div class="product_desc">
                     <!-- <b>Bunga 1</b> -->
+                    
                     <?php echo $item['deskripsi']; ?>
+
                 </div>
                 <div class="product_price">
                     <div class="price">
                         <?php echo "Rp " . number_format($item['harga'], 0, ".", "."); ?>
                     </div>
                     <br>
-                    <a href="index.php/produk/detailProduk/<?php echo $item['id_produk']; ?>" class="btn btn-success">Detail</a>
+                    <a href="index.php/produk/detailProdukAdmin/<?php echo $item['id_produk']; ?>" class="btn btn-success">Detail</a>
                     <a href="#" class="btn btn-primary">Edit</a>
-                    <a href="#" class="btn btn-danger">Delete</a>
+                    <a href="index.php/produk/deleteProdukAdmin/<?php echo $item['id_produk']; ?>" class="btn btn-danger">Delete</a>
                 </div>
 
             </div>
