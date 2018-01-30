@@ -47,20 +47,25 @@
 
 <div class="container">
     <div id="prod-container">
-        <div class="prod-box">
-            <img src="resources/images/bg_login.jpg" alt="produk">
-            <div class="prod-trans">
-                <div class="prod-feature">
-                    <p>Bunga 1</p>
-                    <p>Price : Rp.10.000</p>
-                    <a href="detailProduct.html">
-                        <button type="button" class="btn btn-success">Detail</button>
-                    </a>
-                </div>
-            </div>
+      <?php foreach ($posts as $item) {
 
-        </div>
-        <div class="prod-box">
+                    ?>
+                    <div class="prod-box">
+                        <img src="foto_produk/<?php echo $item['foto_produk']; ?>" alt="produk">
+                        <div class="prod-trans">
+                            <div class="prod-feature">
+                                <p><?php echo $item['nama_produk'] ?></p>
+                                <p>Harga : <?php echo "Rp ". number_format($item['harga'],0,".","."); ?></p>
+                                <a href="index.php/produk/detailProduk/<?php echo $item['id_produk']; ?>">
+                                    <button type="button" class="btn btn-success">Detail</button>
+                                </a>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                    <?php } ?>
+     <!--    <div class="prod-box">
             <img src="resources/images/gambar1.jpg" alt="produk">
             <div class="prod-trans">
                 <div class="prod-feature">
@@ -158,7 +163,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
 
     </div>
 </div>
