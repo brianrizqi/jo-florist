@@ -16,15 +16,15 @@ session_start();
 
 
   <!-- resources login -->
-  <meta charset="UTF-8">
+<!--   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width , initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="resources/css/login.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/login.css"> -->
 
 
   <!-- resources homeAdmin -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width , initial-scale=1.0">
-  <link href="resources/css/style.css" type="text/css" rel="stylesheet">
+  <!-- <link href="resources/css/style.css" type="text/css" rel="stylesheet"> -->
   <link rel="stylesheet" href="resources/css/bootstrap.min.css">
   <script src="resources/js/jquery-3.2.1.min.js"></script>
   <script src="resources/js/bootstrap.min.js"></script>

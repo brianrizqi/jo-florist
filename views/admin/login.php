@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="resources/css/login.css">
     <title>Login</title>
 </head>
-<body>
+<body background="resources/images/bg_login1.jpeg">
     <div class="loginbox">
         <img src="resources/images/user.png" class="avatar">
         <h1>Login Here</h1>
