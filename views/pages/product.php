@@ -18,152 +18,174 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="home.html">Jo-Florist</a>
+            <a class="navbar-brand" href="index.php">Jo-Florist</a>
         </div>
-        <!--<div class="collapse navbar-collapse" id="myNavbar">-->
-            <ul class="nav navbar-nav">
-                <li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-                <li class="active"><a href="product.html"><span class="glyphicon glyphicon-shopping-cart"></span>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li class="active"><a href="product.php"><span class="glyphicon glyphicon-shopping-cart"></span>
                     Product</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
-            </ul>
-        </div>
-    <!--</div>-->
+            <li><a href="index.php#footer"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+            <li><a href="index.php#contact"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
+        </ul>
+    </div>
+    </div>
 </nav>
 <br>
 
+<div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-<div id="banner1">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner"
+             style="width: 100%; height: auto; max-height: 400px; min-height: 300px; background-size:cover">
+            <div class="item active">
+                <img src="resources/images/bg_login.jpg">
+            </div>
 
-    <div class="center">
+            <div class="item">
+                <img src="resources/images/bg_login1.jpeg">
+            </div>
 
-        <img src="resources/images/produk1.png" width="100%">
-
+            <div class="item">
+                <img src="resources/images/bg_detail.jpg">
+            </div>
+        </div>
     </div>
-
 </div>
-
 
 <div class="container">
     <div id="prod-container">
-      <?php foreach ($posts as $item) {
+        <?php foreach ($posts as $item) {
 
-                    ?>
-                    <div class="prod-box">
-                        <img src="foto_produk/<?php echo $item['foto_produk']; ?>" alt="produk">
-                        <div class="prod-trans">
-                            <div class="prod-feature">
-                                <p><?php echo $item['nama_produk'] ?></p>
-                                <p>Harga : <?php echo "Rp ". number_format($item['harga'],0,".","."); ?></p>
-                                <a href="index.php/produk/detailProduk/<?php echo $item['id_produk']; ?>">
-                                    <button type="button" class="btn btn-success">Detail</button>
-                                </a>
-                                
-                            </div>
-                        </div>
-
+            ?>
+            <div class="product_one">
+                <div class="product_img">
+                    <img src="foto_produk/<?php echo $item['foto_produk']; ?>" style="min-height:175px;">
+                </div>
+                <div class="product_text">
+                    <h4><?php echo $item['nama_produk']; ?></h4>
+                </div>
+                <div class="product_desc">
+                    <!-- <b>Bunga 1</b> -->
+                    <?php echo $item['deskripsi']; ?>
+                </div>
+                <div class="product_price">
+                    <div class="price">
+                        <?php echo "Rp " . number_format($item['harga'], 0, ".", "."); ?>
                     </div>
-                    <?php } ?>
-     <!--    <div class="prod-box">
-            <img src="resources/images/gambar1.jpg" alt="produk">
-            <div class="prod-trans">
-                <div class="prod-feature">
-                    <p>Bunga 2</p>
-                    <p>Price : Rp.15.000</p>
-                    <button type="button" class="btn btn-success">Detail</button>
+                    <a href="index.php/produk/detailProduk/<?php echo $item['id_produk']; ?>"
+                       class="button_buy">Detail</a>
                 </div>
-            </div>
 
-        </div>
-        <div class="prod-box">
-            <img src="resources/images/gambar2.jpeg" alt="produk">
-            <div class="prod-trans">
-                <div class="prod-feature">
-                    <p>Bunga 1</p>
-                    <p>Price : Rp.17.000</p>
-                    <button type="button" class="btn btn-success">Detail</button>
-                </div>
             </div>
+        <?php } ?>
 
-        </div>
-        <div class="prod-box">
-            <img src="resources/images/gambar2.jpeg" alt="produk">
-            <div class="prod-trans">
-                <div class="prod-feature">
-                    <p>Bunga 1</p>
-                    <p>Price : Rp.17.000</p>
-                    <button type="button" class="btn btn-success">Detail</button>
-                </div>
-            </div>
+        <!--    <div class="prod-box">
+               <img src="resources/images/gambar1.jpg" alt="produk">
+               <div class="prod-trans">
+                   <div class="prod-feature">
+                       <p>Bunga 2</p>
+                       <p>Price : Rp.15.000</p>
+                       <button type="button" class="btn btn-success">Detail</button>
+                   </div>
+               </div>
 
-        </div>
-        <div class="prod-box">
-            <img src="resources/images/gambar2.jpeg" alt="produk">
-            <div class="prod-trans">
-                <div class="prod-feature">
-                    <p>Bunga 1</p>
-                    <p>Price : Rp.17.000</p>
-                    <button type="button" class="btn btn-success">Detail</button>
-                </div>
-            </div>
+           </div>
+           <div class="prod-box">
+               <img src="resources/images/gambar2.jpeg" alt="produk">
+               <div class="prod-trans">
+                   <div class="prod-feature">
+                       <p>Bunga 1</p>
+                       <p>Price : Rp.17.000</p>
+                       <button type="button" class="btn btn-success">Detail</button>
+                   </div>
+               </div>
 
-        </div>
-        <div class="prod-box">
-            <img src="resources/images/gambar2.jpeg" alt="produk">
-            <div class="prod-trans">
-                <div class="prod-feature">
-                    <p>Bunga 1</p>
-                    <p>Price : Rp.17.000</p>
-                    <button type="button" class="btn btn-success">Detail</button>
-                </div>
-            </div>
+           </div>
+           <div class="prod-box">
+               <img src="resources/images/gambar2.jpeg" alt="produk">
+               <div class="prod-trans">
+                   <div class="prod-feature">
+                       <p>Bunga 1</p>
+                       <p>Price : Rp.17.000</p>
+                       <button type="button" class="btn btn-success">Detail</button>
+                   </div>
+               </div>
 
-        </div>
-        <div class="prod-box">
-            <img src="resources/images/gambar2.jpeg" alt="produk">
-            <div class="prod-trans">
-                <div class="prod-feature">
-                    <p>Bunga 1</p>
-                    <p>Price : Rp.17.000</p>
-                    <button type="button" class="btn btn-success">Detail</button>
-                </div>
-            </div>
+           </div>
+           <div class="prod-box">
+               <img src="resources/images/gambar2.jpeg" alt="produk">
+               <div class="prod-trans">
+                   <div class="prod-feature">
+                       <p>Bunga 1</p>
+                       <p>Price : Rp.17.000</p>
+                       <button type="button" class="btn btn-success">Detail</button>
+                   </div>
+               </div>
 
-        </div>
-        <div class="prod-box">
-            <img src="resources/images/gambar2.jpeg" alt="produk">
-            <div class="prod-trans">
-                <div class="prod-feature">
-                    <p>Bunga 1</p>
-                    <p>Price : Rp.17.000</p>
-                    <button type="button" class="btn btn-success">Detail</button>
-                </div>
-            </div>
+           </div>
+           <div class="prod-box">
+               <img src="resources/images/gambar2.jpeg" alt="produk">
+               <div class="prod-trans">
+                   <div class="prod-feature">
+                       <p>Bunga 1</p>
+                       <p>Price : Rp.17.000</p>
+                       <button type="button" class="btn btn-success">Detail</button>
+                   </div>
+               </div>
 
-        </div>
-        <div class="prod-box">
-            <img src="resources/images/gambar2.jpeg" alt="produk">
-            <div class="prod-trans">
-                <div class="prod-feature">
-                    <p>Bunga 1</p>
-                    <p>Price : Rp.17.000</p>
-                    <button type="button" class="btn btn-success">Detail</button>
-                </div>
-            </div>
+           </div>
+           <div class="prod-box">
+               <img src="resources/images/gambar2.jpeg" alt="produk">
+               <div class="prod-trans">
+                   <div class="prod-feature">
+                       <p>Bunga 1</p>
+                       <p>Price : Rp.17.000</p>
+                       <button type="button" class="btn btn-success">Detail</button>
+                   </div>
+               </div>
 
-        </div>
-        <div class="prod-box">
-            <img src="resources/images/gambar2.jpeg" alt="produk">
-            <div class="prod-trans">
-                <div class="prod-feature">
-                    <p>Bunga 1</p>
-                    <p>Price : Rp.17.000</p>
-                    <button type="button" class="btn btn-success">Detail</button>
-                </div>
-            </div>
+           </div>
+           <div class="prod-box">
+               <img src="resources/images/gambar2.jpeg" alt="produk">
+               <div class="prod-trans">
+                   <div class="prod-feature">
+                       <p>Bunga 1</p>
+                       <p>Price : Rp.17.000</p>
+                       <button type="button" class="btn btn-success">Detail</button>
+                   </div>
+               </div>
 
-        </div> -->
+           </div>
+           <div class="prod-box">
+               <img src="resources/images/gambar2.jpeg" alt="produk">
+               <div class="prod-trans">
+                   <div class="prod-feature">
+                       <p>Bunga 1</p>
+                       <p>Price : Rp.17.000</p>
+                       <button type="button" class="btn btn-success">Detail</button>
+                   </div>
+               </div>
+
+           </div>
+           <div class="prod-box">
+               <img src="resources/images/gambar2.jpeg" alt="produk">
+               <div class="prod-trans">
+                   <div class="prod-feature">
+                       <p>Bunga 1</p>
+                       <p>Price : Rp.17.000</p>
+                       <button type="button" class="btn btn-success">Detail</button>
+                   </div>
+               </div>
+
+           </div> -->
 
     </div>
 </div>
@@ -197,8 +219,8 @@
         </iframe>
         <br>
         <small><a
-                href="https://www.google.co.id/maps/place/Jo+Florist/@-8.1694109,113.7106291,15z/data=!4m2!3m1!1s0x0:0xf05adf22f97e2722?sa=X&ved=0ahUKEwjWme2G3PXYAhVFvo8KHcHNDcMQ_BIIfjAK"
-                style="color:#666;text-align:left;font-size:12px">View Larger Map</a></small>
+                    href="https://www.google.co.id/maps/place/Jo+Florist/@-8.1694109,113.7106291,15z/data=!4m2!3m1!1s0x0:0xf05adf22f97e2722?sa=X&ved=0ahUKEwjWme2G3PXYAhVFvo8KHcHNDcMQ_BIIfjAK"
+                    style="color:#666;text-align:left;font-size:12px">View Larger Map</a></small>
     </div>
 </div>
 <a href="#">
