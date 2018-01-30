@@ -10,12 +10,19 @@
     <div class="loginbox">
         <img src="resources/images/user.png" class="avatar">
         <h1>Login Here</h1>
-        <form>
+        <form method="POST">
+            <input type="hidden" name="controller" value="user">
+            <input type="hidden" name="action" value="authentication">
+
             <p>Username</p>
-            <input type="text" name="username" placeholder="Username">
+            <input type="text" name="username" placeholder="Username" required autofocus>
             <p>Password</p>
-            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Password" required>
+            <div>
+                <i><b><?php echo $error ?></b></i><br><br>
+            </div>
             <input type="submit" name="submit" value="Login">
+            
         </form>
 
 
