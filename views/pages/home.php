@@ -49,14 +49,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.html">Jo-Florist</a>
+                <a class="navbar-brand" href="index.php">Jo-Florist</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                     <li><a href="index.php/produk/semuaProduk"><span class="glyphicon glyphicon-shopping-cart"></span> Product</a></li>
                     <li><a href="#footer"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
+                    <li><a href="#contact"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -90,7 +90,7 @@
                         <h4><?php echo $item['nama_produk']; ?></h4>
                     </div>
                     <div class="product_desc">
-                        <!-- <b>Bunga 1</b> --> 
+                        <!-- <b>Bunga 1</b> -->
                         <?php echo $item['deskripsi']; ?>
                     </div>
                     <div class="product_price">

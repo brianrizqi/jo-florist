@@ -25,8 +25,8 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="index.php/home/homeAdmin">Home</a></li>
                 <li><a href="index.php/produk/lihatProduk">Product</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#bannerAbout">About</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.php/produk/tambahProduk">Tambah Produk</a></li>
