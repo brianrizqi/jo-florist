@@ -85,7 +85,7 @@
                     </div>
                     <br>
                     <a href="index.php/produk/detailProdukAdmin/<?php echo $item['id_produk']; ?>" class="btn btn-success">Detail</a>
-                    <a href="#" class="btn btn-primary">Edit</a>
+                    <a href="index.php/produk/editProduk/<?php echo $item['id_produk']; ?>" class="btn btn-primary">Edit</a>
                     <a href="index.php/produk/deleteProdukAdmin/<?php echo $item['id_produk']; ?>" class="btn btn-danger">Delete</a>
                 </div>
 

@@ -28,12 +28,17 @@ function call($controller, $action){
 		break;
 
 		case 'produk':
-		//require_once('models/m_home.php');
+		
 		require_once('models/m_produk.php');
 		$controller=new ProdukController();
 		break;
 
-		case 'laporan':
+		case 'contact':
+		
+		$controller=new ContactController();
+		break;
+
+		/*case 'laporan':
 		require_once('models/m_laporan.php');
 		$controller=new LaporanController();
 		break;
@@ -44,7 +49,7 @@ function call($controller, $action){
 		require_once('models/m_keranjang.php');
 		$controller=new KeranjangController();
 		break;
-		
+		*/
 		
 	}
 	$controller->{ $action }();

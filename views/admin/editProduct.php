@@ -10,53 +10,63 @@
     <title></title>
 </head>
 <body>
-<div id="form">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
+    <div id="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
 
-            </div>
-            <div class="col-md-6">
-                <form id="regis" method="post" enctype="multipart/form-data">
-                    <div class="card">
-                        <img src="resources/images/bg_login.jpg" width="75%">
-                        <h4>Nama bunga</h4>
-                        <h5>Kode bunga</h5>
-                        <h5>Harga Bunga</h5>
-                    </div>
-                    <br>
-                    <label>Nama bunga</label>
-                    <br>
-                    <input type="text" name="name" id="button" placeholder="Nama Bunga">
-                    <br>
-                    <br>
-                    <label>Kode bunga</label>
-                    <br>
-                    <input type="number" name="name" id="button" placeholder="Kode Bunga">
-                    <br>
-                    <br>
-                    <label>Harga bunga</label>
-                    <br>
-                    <input type="number" name="name" id="button" placeholder="Harga Bunga">
-                    <br>
-                    <br>
-                    <label>Deskripsi</label>
-                    <br>
-                    <textarea style="width: 300px; height: 125px;" name="deskripsi" id="button"></textarea>
-                    <br>
-                    <br>
-                    <center><input type="file" name="foto_bunga" class="form-control" id="button"></center>
-                    <br>
-                    <br>
-                    <input type="submit" name="submit" value="Submit">
+                </div>
+                <div class="col-md-6">
+                    <form id="regis" method="post" enctype="multipart/form-data">
+                       <input type="hidden" name="controller" value="produk">
+                       <input type="hidden" name="action" value="prosesUpdateProduk">
 
-                </form>
+                       <?php foreach ($posts as $item) {
+                    # code...
+                           ?>
+                           <div class="card">
+                            <img src="foto_produk/<?php echo $item['foto_produk']; ?>" width="75%">
+                            <h4><?php echo $item['nama_produk']; ?></h4>
+                            <h5><?php echo $item['kode_produk']; ?></h5>
+                            <h5><?php echo "Rp ". number_format($item['harga'],0,".","."); ?></h5>
+                        </div>
+                        <br>
+                        <label>Nama bunga</label>
+                        <br>
+                        <input required type="text" name="nama_produk" id="button" placeholder="Nama Bunga" value="<?php echo $item['nama_produk']; ?>">
+                        <br>
+                        <br>
+                        <label>Kode bunga</label>
+                        <br>
+                        <input type="number" name="kode_produk" id="button" placeholder="Kode Bunga" value="<?php echo $item['kode_produk']; ?>">
+                        <input type="hidden" name="id_produk" id="button" value="<?php echo $item['id_produk']; ?>">
+                        <input type="hidden" name="foto_produk" id="button" value="<?php echo $item['foto_produk']; ?>">
+                        <br>
+                        <br>
+                        <label>Harga bunga</label>
+                        <br>
+                        <input required type="number" name="harga" id="button" placeholder="Harga Bunga" value="<?php echo $item['harga']; ?>">
+                        <br>
+                        <br>
+                        <label>Deskripsi</label>
+                        <br>
+                        <textarea style="width: 300px; height: 125px;" name="deskripsi" id="button"><?php echo $item['deskripsi']; ?></textarea>
+                        <br>
+                        <br>
+                        <center><input type="file" name="foto_bunga" class="form-control" id="button" >
+                        </center>
+                        <br>
+                        <br>
+                        <?php } ?>
+                        <input type="submit" name="submit" value="Submit">
+
+                    </form>
+                </div>
+                <div class="col-md-3"></div>
             </div>
-            <div class="col-md-3"></div>
+
         </div>
-
     </div>
-</div>
 
 
 </body>

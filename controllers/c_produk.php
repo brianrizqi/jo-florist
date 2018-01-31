@@ -33,9 +33,7 @@ Class ProdukController{
 		}
 
 		header("location:http://localhost/jo-florist/index.php/produk/lihatProduk");
-		//require_once("views/pages/createProduk.php");
-
-		//require_once("views/pages/penjual/inputProduk.php");
+	
 
 
 	}
@@ -54,22 +52,22 @@ Class ProdukController{
 
 	public function semuaProduk(){
 		
-			
-			$posts=Produk::lihatProduk();
-			require_once('views/pages/product.php');
+
+		$posts=Produk::lihatProduk();
+		require_once('views/pages/product.php');
 
 	}
 
 	public function detailProduk(){
-			
-			$id_produk=$_GET['id_produk'];
-			$posts=Produk::lihatDetailProduk($id_produk);
-			require_once('views/pages/detailProduct.php');
-	
+
+		$id_produk=$_GET['id_produk'];
+		$posts=Produk::lihatDetailProduk($id_produk);
+		require_once('views/pages/detailProduct.php');
+
 
 	}
 
-		public function detailProdukAdmin(){
+	public function detailProdukAdmin(){
 		if (isset($_SESSION['login_user'])) {
 
 			$id_produk=$_GET['id_produk'];
@@ -88,7 +86,7 @@ Class ProdukController{
 		if (isset($_SESSION['login_user'])) {
 			
 			$posts=Produk::editProduk($_GET['id_produk']);
-			require_once('views/pages/penjual/editProduk.php');
+			require_once('views/admin/editProduct.php');
 		}
 		else{
 			header('location:index.php?controller=login&action=login');
@@ -97,43 +95,62 @@ Class ProdukController{
 
 		
 	}
-	public function updateDataProduk(){
-		$posts=Produk::updateDataProduk($_POST['id_produk'],$_POST["nama_produk"],$_POST["harga"],$_POST["jumlah_stok"],$_POST["deskripsi"]);
-		header('location:index.php?controller=produk&action=showAllProdukPenjual');
+
+
+
+	public function prosesUpdateProduk(){
+		/*	echo "test";*/
+		/*var_dump($_POST);
+		exit;*/
+		$id_produk=$_POST['id_produk'];
+		$foto_produk=$_POST['foto_produk'];
+
+
+		if (!file_exists($_FILES['foto_bunga']['tmp_name']))
+		{
+			$Produk = Produk::updateProdukAdmin($id_produk,$_POST["nama_produk"],$_POST["kode_produk"],
+				$_POST["harga"],$_POST["deskripsi"],$foto_produk);
+		}
+		else{
+
+
+
+			$foto = $_FILES['foto_bunga']['name'];
+			$tmp = $_FILES['foto_bunga']['tmp_name'];
+			
+
+// Rename nama fotonya dengan menambahkan tanggal dan jam upload
+			$fotobaru = date('dmYHis').$foto;
+// Set path folder tempat menyimpan fotonya
+			$path = "foto_produk/".$fotobaru;
+// Proses upload
+			if (move_uploaded_file($tmp, $path)) {
+				$Produk = Produk::updateProdukAdmin($id_produk,$_POST["nama_produk"],$_POST["kode_produk"],
+					$_POST["harga"],$_POST["deskripsi"],$fotobaru);
+			}
+
+			
+
+
+		}
+		header("location:http://localhost/jo-florist/index.php/produk/lihatProduk");
+
+
+
+
+
 	}
+
 	public function deleteProdukAdmin(){
 		$id_produk=$_GET['id_produk'];
 		$posts=Produk::deleteProdukAdmin($id_produk);
 		header('location:http://localhost/jo-florist/index.php/produk/lihatProduk');
 	}
 
-/*	public function detailProduk(){
 
-		
-		
-		$posts=Produk::showDetailProduk($_GET['id_produk']);
-		require_once('views/pages/detailProduk.php');
-		
-		
-
-
-		
-	}*/
-
-
-	public function detailBeliProduk(){
-
-		if (isset($_SESSION['login_user'])) {
-			
-			$posts=Produk::showDetailProduk($_GET['id_produk']);
-			require_once('views/pages/pembeli/detailProduk.php');
-		}
-		else{
-			header('location:index.php?controller=login&action=login');
-		}
-
-
-		
-	}
 }
-?>
+
+
+
+
+	?>
