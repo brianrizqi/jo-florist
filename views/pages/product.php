@@ -6,6 +6,7 @@
     <link href="resources/css/product.css" rel="stylesheet" type="text/css">
     <link href="resources/css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="icon" href="resources/images/favicon.png">
     <title>Product</title>
 </head>
 <body>
@@ -23,10 +24,8 @@
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
             <li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li class="active"><a href="product.php"><span class="glyphicon glyphicon-shopping-cart"></span>
+            <li class="active"><a href="index.php/produk/semuaProduk"><span class="glyphicon glyphicon-shopping-cart"></span>
                     Product</a></li>
-            <li><a href="index.php#footer"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
-            <li><a href="http://localhost/jo-florist/index.php#contact"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
         </ul>
     </div>
     </div>

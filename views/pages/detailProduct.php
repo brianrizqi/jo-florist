@@ -7,9 +7,29 @@
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <script src="resources/js/jquery-3.2.1.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
+    <link rel="icon" href="resources/images/favicon.png">
     <title></title>
 </head>
 <body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+<!--            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--            </button>-->
+            <a class="navbar-brand" href="index.php">Jo-Florist</a>
+        </div>
+<!--        <div class="collapse navbar-collapse" id="myNavbar">-->
+            <ul class="nav navbar-nav">
+                <li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a href="index.php/produk/semuaProduk"><span class="glyphicon glyphicon-shopping-cart"></span>
+                        Product</a></li>
+            </ul>
+<!--        </div>-->
+    </div>
+</nav>
 
 <?php foreach ($posts as $item) {
     

@@ -6,6 +6,7 @@
     <link href="resources/css/product.css" rel="stylesheet" type="text/css">
     <link href="resources/css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="icon" href="resources/images/favicon.png">
     <title></title>
 </head>
 <body>
@@ -23,8 +24,6 @@
             <ul class="nav navbar-nav">
                 <li><a href="index.php/home/homeAdmin">Home</a></li>
                 <li class="active"><a href="index.php/produk/lihatProduk">Product</a></li>
-                <li><a href="index.php/home/homeAdmin#bannerAbout">About</a></li>
-                <li><a href="index.php/home/homeAdmin#footer">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.php/produk/tambahProduk">Tambah Produk</a></li>

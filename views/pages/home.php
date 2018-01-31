@@ -14,7 +14,8 @@
     function hideURLbar() {
         window.scrollTo(0, 1);
     } </script>
-    <title>Home</title>
+    <link rel="icon" href="resources/images/favicon.png">
+    <title>Jo-Florist</title>
 </head>
 <body>
     <!--fab-->
