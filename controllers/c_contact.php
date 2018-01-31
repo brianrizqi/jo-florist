@@ -8,10 +8,10 @@ Class ContactController{
 			$pesan=$_POST['pesan'];
 
 			$phone="628978390660";
-			$teks="nama :"."*".$nama."*"
-				 ." email :"."*".$email."*"
-				 ." telepon :"."*".$telepon."*"
-				 ." pesan :"."*".$pesan."*"
+			$teks=" nama : "."*".$nama."* \n"
+				 ." email : "."*".$email."* \n"
+				 ." telepon : "."*".$telepon."* \n"
+				 ." pesan : "."*".$pesan."* \n"
 			;
 
 			$textEncoded=rawurlencode($teks);
