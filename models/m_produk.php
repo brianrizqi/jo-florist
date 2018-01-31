@@ -3,214 +3,178 @@
 Class Produk{
 	
 	
-/*	public $id_produk;
-	public $nama_produk;
-	public $id_user;
-	public $jumlah_stok;
-	public $harga;
-	public $foto_produk;
-	public $deskripsi;*/
-	
 
-	function __construct(/*$id_produk,$nama_produk,$id_user,$jumlah_stok,$harga,$foto_produk,$deskripsi*/)
-	{
-		/*$this->id_produk=$id_produk;
-		$this->nama_produk=$nama_produk;
-		$this->id_user=$id_user;
-		$this->jumlah_stok=$jumlah_stok;
-		$this->harga=$harga;
-		$this->foto_produk=$foto_produk;
-		$this->deskripsi=$deskripsi;*/
+
+	function __construct(){
+		
 
 	}
-	public static function showAllProduk(){
+
+
+
+
+
+	public static function lihatProduk(){
 		$list=[];
 
 		$db = DB::getInstance();
 
-		$req = $db->query("SELECT *
-			FROM produk p join users u
-			ON p.id_user=u.id_user");
+		$req = $db->query("SELECT * FROM produk ORDER BY id_produk DESC");
 
-	/*	foreach ($req->fetchAll() as $post) {
-			$list[] = new Produk($post['id_produk'],$post['nama_produk'],$post['id_user']
-				,$post['jumlah_stok'],$post['harga'],$post['foto_produk'],$post['deskripsi']
+		foreach ($req as $item) {
+			$list[]=array(
+				'id_produk'=>$item['id_produk'],
+				'nama_produk'=>$item['nama_produk'],
+				'kode_produk'=>$item['kode_produk'],
+				'harga'=>$item['harga'],
+				'deskripsi'=>$item['deskripsi'],
+				'foto_produk'=>$item['gambar']
+				
+
 				);
-}*/
+		}
+		if (isset($list)) {
+			return $list;
+		} else {
+			return null;
+		}
 
-foreach ($req as $item) {
-	$list[]=array(
-		'id_produk'=>$item['id_produk'],
-		'nama_produk'=>$item['nama_produk'],
-		'id_user'=>$item['id_user'],
-		'jumlah_stok'=>$item['jumlah_stok'],
-		'harga'=>$item['harga'],
-		'foto_produk'=>$item['foto_produk'],
-		'deskripsi'=>$item['deskripsi'],
-		'penjual'=>$item['nama']
+	}
+	public static function lihatProdukBaru(){
+		$list=[];
 
-		);
-}
-if (isset($list)) {
-	return $list;
-} else {
-	return null;
-}
+		$db = DB::getInstance();
 
+		$req = $db->query("SELECT * FROM produk ORDER BY id_produk DESC LIMIT 0,4");
 
-}
+		foreach ($req as $item) {
+			$list[]=array(
+				'id_produk'=>$item['id_produk'],
+				'nama_produk'=>$item['nama_produk'],
+				'kode_produk'=>$item['kode_produk'],
+				'harga'=>$item['harga'],
+				'deskripsi'=>$item['deskripsi'],
+				'foto_produk'=>$item['gambar']
+				
 
-public static function showDetailProduk($id_produk){
-	$list=[];
-
-	$db = DB::getInstance();
-
-	$req = $db->query("SELECT *
-		FROM produk p join users u
-		ON p.id_user=u.id_user where p.id_produk=".$id_produk);
-
-	/*	foreach ($req->fetchAll() as $post) {
-			$list[] = new Produk($post['id_produk'],$post['nama_produk'],$post['id_user']
-				,$post['jumlah_stok'],$post['harga'],$post['foto_produk'],$post['deskripsi']
 				);
-}*/
+		}
+		if (isset($list)) {
+			return $list;
+		} else {
+			return null;
+		}
 
-foreach ($req as $item) {
-	$list[]=array(
-		'id_produk'=>$item['id_produk'],
-		'nama_produk'=>$item['nama_produk'],
-		'id_user'=>$item['id_user'],
-		'jumlah_stok'=>$item['jumlah_stok'],
-		'harga'=>$item['harga'],
-		'foto_produk'=>$item['foto_produk'],
-		'deskripsi'=>$item['deskripsi'],
-		'penjual'=>$item['nama']
-
-		);
-}
-if (isset($list)) {
-	return $list;
-} else {
-	return null;
-}
-
-
-}
-
-
-public static function lihatProduk(){
-	$list=[];
-
-	$db = DB::getInstance();
-
-	$req = $db->query("SELECT * FROM produk");
-
-	foreach ($req as $item) {
-		$list[]=array(
-			'id_produk'=>$item['id_produk'],
-			'nama_produk'=>$item['nama_produk'],
-			'kode_produk'=>$item['kode_produk'],
-			'harga'=>$item['harga'],
-			'deskripsi'=>$item['deskripsi'],
-			'foto_produk'=>$item['gambar']
-			
-
-			);
-	}
-	if (isset($list)) {
-		return $list;
-	} else {
-		return null;
 	}
 
-}
-public static function lihatProdukBaru(){
-	$list=[];
+	public static function lihatDetailProduk($id_produk){
+		$list=[];
 
-	$db = DB::getInstance();
+		$db = DB::getInstance();
 
-	$req = $db->query("SELECT * FROM produk ORDER BY id_produk DESC LIMIT 0,4");
+		$req = $db->query("SELECT * FROM produk where id_produk=".$id_produk);
 
-	foreach ($req as $item) {
-		$list[]=array(
-			'id_produk'=>$item['id_produk'],
-			'nama_produk'=>$item['nama_produk'],
-			'kode_produk'=>$item['kode_produk'],
-			'harga'=>$item['harga'],
-			'deskripsi'=>$item['deskripsi'],
-			'foto_produk'=>$item['gambar']
-			
+		foreach ($req as $item) {
+			$list[]=array(
+				'id_produk'=>$item['id_produk'],
+				'nama_produk'=>$item['nama_produk'],
+				'kode_produk'=>$item['kode_produk'],
+				'harga'=>$item['harga'],
+				'deskripsi'=>$item['deskripsi'],
+				'foto_produk'=>$item['gambar']
+				
 
-			);
-	}
-	if (isset($list)) {
-		return $list;
-	} else {
-		return null;
-	}
-
-}
-public static function tambahProduk($nama_produk,$kode_produk,$harga,$deskripsi,$foto_produk){
-	$db = DB::getInstance();
-
-	$req = $db->query("INSERT INTO produk (id_produk, nama_produk, kode_produk,harga, deskripsi, gambar) 
-		VALUES (NULL, '".$nama_produk."', '".$kode_produk."', '".$harga."', '".$deskripsi."', '".$foto_produk."');
-		");
-
-	return $req;
-}
-
-
-public static function editProduk($id_produk){
-	$list=[];
-
-	$db = DB::getInstance();
-
-	$req = $db->query("SELECT * FROM produk where id_produk=".$id_produk);
-
-
-	foreach ($req as $item) {
-		$list[]=array(
-			'id_produk'=>$item['id_produk'],
-			'nama_produk'=>$item['nama_produk'],
-			'id_user'=>$item['id_user'],
-			'jumlah_stok'=>$item['jumlah_stok'],
-			'harga'=>$item['harga'],
-			'foto_produk'=>$item['foto_produk'],
-			'deskripsi'=>$item['deskripsi']
-
-			);
-	}
-	if (isset($list)) {
-		return $list;
-	} else {
-		return null;
-	}
-
-	/*	foreach ($req->fetchAll() as $post) {
-			$list[] = new Produk($post['id_produk'],$post['nama_produk'],$post['id_user']
-				,$post['jumlah_stok'],$post['harga'],$post['foto_produk'],$post['deskripsi']
 				);
+		}
+		if (isset($list)) {
+			return $list;
+		} else {
+			return null;
+		}
+	}
+	public static function tambahProduk($nama_produk,$kode_produk,$harga,$deskripsi,$foto_produk){
+		$db = DB::getInstance();
+
+		$req = $db->query("INSERT INTO produk (id_produk, nama_produk, kode_produk,harga, deskripsi, gambar) 
+			VALUES (NULL, '".$nama_produk."', '".$kode_produk."', '".$harga."', '".$deskripsi."', '".$foto_produk."');
+			");
+
+		return $req;
+	}
+
+
+	public static function editProduk($id_produk){
+		$list=[];
+
+		$db = DB::getInstance();
+
+		$req = $db->query("SELECT * FROM produk where id_produk=".$id_produk);
+
+
+		foreach ($req as $item) {
+			$list[]=array(
+				'id_produk'=>$item['id_produk'],
+				'nama_produk'=>$item['nama_produk'],
+				'kode_produk'=>$item['kode_produk'],
+				'harga'=>$item['harga'],
+				'deskripsi'=>$item['deskripsi'],
+				'foto_produk'=>$item['gambar']
+				);
+		}
+		if (isset($list)) {
+			return $list;
+		} else {
+			return null;
 		}
 
 
-		return $list;*/
 	}
-	public static function updateDataProduk($id_produk,$nama_produk,$harga,$jumlah_stok,$deskripsi){
+
+
+	public static function updateProdukAdmin($id_produk,$nama_produk,$kode_produk,$harga,$deskripsi,$foto_produk){
 		$db = DB::getInstance();
 
-		$req = $db->query("UPDATE produk set nama_produk='$nama_produk',jumlah_stok='$jumlah_stok',harga='$harga'
-			,deskripsi='$deskripsi' where id_produk=".$id_produk);
+		$url_gambar;
+		$req1 = $db->query("SELECT gambar FROM produk where id_produk='$id_produk'");
+		foreach ($req1 as $item) {
+			$url_gambar = $item['gambar'];
+		}
+		if (strcasecmp($url_gambar,$foto_produk)==0) {
+			$req2 = $db->query("UPDATE produk set nama_produk='$nama_produk',kode_produk='$kode_produk',
+				harga='$harga',deskripsi='$deskripsi',gambar='$foto_produk' where id_produk=".$id_produk);
+		}
+		else{
+			$req3 = $db->query("UPDATE produk set nama_produk='$nama_produk',kode_produk='$kode_produk',
+				harga='$harga',deskripsi='$deskripsi',gambar='$foto_produk' where id_produk=".$id_produk);
+			unlink('foto_produk/'.$url_gambar);
 
-		return $req;
+		}
+
+		
+
+		return $req1;
 	}
-	public static function deleteDataProdukPenjual($id_produk){
+
+	public static function deleteProdukAdmin($id_produk){
 		$db = DB::getInstance();
+		$url_gambar;
+		//fclose($handle);
+		$req1 = $db->query("SELECT gambar FROM produk where id_produk='$id_produk'");
+		foreach ($req1 as $item) {
+			$url_gambar = $item['gambar'];
+		}
+		unlink('foto_produk/'.$url_gambar);
 
-		$req = $db->query("DELETE from produk where id_produk='$id_produk'");
 
-		return $req;
+		$req2 = $db->query("DELETE from produk where id_produk='$id_produk'");
+		
+
+		
+		//$url = "foto_produk/".$url_gambar;
+		return $req1;
 	}
+
+
 }
 
 ?>

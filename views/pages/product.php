@@ -26,7 +26,7 @@
             <li class="active"><a href="product.php"><span class="glyphicon glyphicon-shopping-cart"></span>
                     Product</a></li>
             <li><a href="index.php#footer"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
-            <li><a href="index.php#contact"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
+            <li><a href="http://localhost/jo-florist/index.php#contact"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
         </ul>
     </div>
     </div>

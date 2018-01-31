@@ -9,22 +9,26 @@
     <script src="resources/js/bootstrap.min.js"></script>
     <title></title>
 </head>
-<body   >
+<body>
+
+<?php foreach ($posts as $item) {
+    
+ ?>
 <div class="product-card">
     <div class="product-image">
-        <img src="resources/images/bg_login.jpg" width="100%">
+        <img src="foto_produk/<?php echo $item['foto_produk']; ?>" width="100%">
     </div>
     <div class="product-details">
-        <span class="product-code">#23E23</span>
-        <h4>Bunga 1</h4>
-        <p>lorem ipsum jasdlkjasdlk</p>
+        <span class="product-code"><?php echo $item['kode_produk']; ?></span>
+        <h4><?php echo $item['nama_produk'] ?></h4>
+        <p><?php echo $item['deskripsi']; ?></p>
         <div class="product-bottom">
             <div class="product-price">
-                Rp.10.000
+                 <?php echo "Rp " . number_format($item['harga'], 0, ".", "."); ?>
             </div>
         </div>
     </div>
 </div>
-
+<?php } ?>
 </body>
 </html>

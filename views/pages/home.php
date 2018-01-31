@@ -84,7 +84,7 @@
                 ?>
                 <div class="product_one">
                     <div class="product_img">
-                    <img src="foto_produk/<?php echo $item['foto_produk']; ?>" style="min-height:175px;">
+                        <img src="foto_produk/<?php echo $item['foto_produk']; ?>" style="min-height:175px;">
                     </div>
                     <div class="product_text">
                         <h4><?php echo $item['nama_produk']; ?></h4>
@@ -102,146 +102,96 @@
 
                 </div>
                 <?php } ?>
-    <!--     <div class="product_one product_two">
-            <div class="product_img">
-                <img src="resources/images/gambar2.jpeg">
-            </div>
-            <div class="product_text">
-                <h4>Bunga 1</h4>
-            </div>
-            <div class="product_desc">
-                <b>Bunga 1</b> adalah bunga yang anu anu anu anuanuanu anuanu
-            </div>
-            <div class="product_price">
-                <div class="price">
-                    Rp.10.000
-                </div>
-                <a href="#" class="button_buy">Detail</a>
-            </div>
 
-        </div>
-        <div class="product_one product_three">
-            <div class="product_img">
-                <img src="resources/images/gambar2.jpeg">
-            </div>
-            <div class="product_text">
-                <h4>Bunga 1</h4>
-            </div>
-            <div class="product_desc">
-                <b>Bunga 1</b> adalah bunga yang anu anu anu anuanuanu anuanu
-            </div>
-            <div class="product_price">
-                <div class="price">
-                    Rp.10.000
-                </div>
-                <a href="#" class="button_buy">Detail</a>
-            </div>
-
-        </div>
-        <div class="product_one product_four">
-            <div class="product_img">
-                <img src="resources/images/gambar2.jpeg">
-            </div>
-            <div class="product_text">
-                <h4>Bunga 1</h4>
-            </div>
-            <div class="product_desc">
-                <b>Bunga 1</b> adalah bunga yang anu anu anu anuanuanu anuanu
-            </div>
-            <div class="product_price">
-                <div class="price">
-                    Rp.10.000
-                </div>
-                <a href="#" class="button_buy">Detail</a>
-            </div>
-
-        </div> -->
-    </div>
-</div>
-<!--about-->
-<div id="bannerAbout">
-    <p></p>
-    <img src="resources/images/jo.jpg" width="100%">
-
-</div>
-
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-
-            </div>
-            <div class="col-md-6">
-
-                <div id="form">
-                    <form id="regis" method="post" enctype="multipart/form-data">
-                        <label>FOR SPECIAL REQUESTS & ORDERS</label>
-                        <br>
-                        <br>
-                        <input type="text" name="name" id="button" placeholder="Nama">
-                        <br>
-                        <br>
-                        <input type="email" name="name" id="button" placeholder="Email">
-                        <br>
-                        <br>
-                        <input type="tel" name="name" id="button" placeholder="No Telepon">
-                        <br>
-                        <br>
-                        <textarea style="width: 300px; height: 125px;" name="deskripsi" id="button"
-                        placeholder="Message"></textarea>
-                        <br>
-                        <br>
-                        <input type="submit" name="submit" value="Submit">
-
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-3">
             </div>
         </div>
-    </div>
-</div>
-
-
-<!--footer-->
-
-<div id="footer">
-    <div class="center">
-        <div class="store">
-            <p>Our Store</p>
-            <p>Jalan Sumatra no 163 Sumbersari, Jember</p>
-            <p>Phone: 0821-4317-2060</p>
-            <p>Email: jo_florist@gmail.com</p>
+        <!--about-->
+        <div id="bannerAbout">
+            <p></p>
+            <img src="resources/images/jo.jpg" width="100%">
 
         </div>
-        <div class="opening">
-            <p>Opening Hours</p>
-            <p>Mon - Sat : 08.00 - 18.00 WIB</p>
-            <p>Sunday : Closed</p>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-6">
+
+                        <div id="form">
+                            <form id="regis" method="post" enctype="multipart/form-data">
+                               <input type="hidden" name="controller" value="contact">
+                               <input type="hidden" name="action" value="sendMessage">
+
+                               <label>FOR SPECIAL REQUESTS & ORDERS</label>
+                               <br>
+                               <br>
+                               <input type="text" name="nama" id="button" placeholder="Nama" required>
+                               <br>
+                               <br>
+                               <input type="email" name="email" id="button" placeholder="Email" required>
+                               <br>
+                               <br>
+                               <input type="tel" name="telepon" id="button" placeholder="No Telepon" required>
+                               <br>
+                               <br>
+                               <textarea required style="width: 300px; height: 125px;" name="pesan" id="button"
+                               placeholder="Message"></textarea>
+                               <br>
+                               <br>
+                               <input type="submit" name="submit" value="Submit">
+
+                           </form>
+                       </div>
+                   </div>
+                   <div class="col-md-3">
+                   </div>
+               </div>
+           </div>
+       </div>
+
+
+       <!--footer-->
+
+       <div id="footer">
+        <div class="center">
+            <div class="store">
+                <p>Our Store</p>
+                <p>Jalan Sumatra no 163 Sumbersari, Jember</p>
+                <p>Phone: 0821-4317-2060</p>
+                <p>Email: jo_florist@gmail.com</p>
+
+            </div>
+            <div class="opening">
+                <p>Opening Hours</p>
+                <p>Mon - Sat : 08.00 - 18.00 WIB</p>
+                <p>Sunday : Closed</p>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="contact_info">
+        <div class="container">
+            <div class="product_section_title">Cari Kami disini</div>
+        </div>
+        <br>
+        <div class="map">
+            <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15797.322352953557!2d113.7106291!3d-8.1694109!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf05adf22f97e2722!2sJo+Florist!5e0!3m2!1sid!2sid!4v1516972907117">
+        </iframe>
+        <br>
+        <small><a
+            href="https://www.google.co.id/maps/place/Jo+Florist/@-8.1694109,113.7106291,15z/data=!4m2!3m1!1s0x0:0xf05adf22f97e2722?sa=X&ved=0ahUKEwjWme2G3PXYAhVFvo8KHcHNDcMQ_BIIfjAK"
+            style="color:#666;text-align:left;font-size:12px">View Larger Map</a></small>
         </div>
     </div>
-
-
-</div>
-<div id="contact_info">
-    <div class="container">
-        <div class="product_section_title">Cari Kami disini</div>
-    </div>
-    <br>
-    <div class="map">
-        <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15797.322352953557!2d113.7106291!3d-8.1694109!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf05adf22f97e2722!2sJo+Florist!5e0!3m2!1sid!2sid!4v1516972907117">
-    </iframe>
-    <br>
-    <small><a
-        href="https://www.google.co.id/maps/place/Jo+Florist/@-8.1694109,113.7106291,15z/data=!4m2!3m1!1s0x0:0xf05adf22f97e2722?sa=X&ved=0ahUKEwjWme2G3PXYAhVFvo8KHcHNDcMQ_BIIfjAK"
-        style="color:#666;text-align:left;font-size:12px">View Larger Map</a></small>
-    </div>
-</div>
-<a href="#">
-    <div id="fab">
-        <img src="resources/images/whatsapp-logo.png">
-    </div>
-</a>
+    <a href="index.php/contact/contactWA">
+        <div id="fab">
+            <img src="resources/images/whatsapp-logo.png">
+        </div>
+    </a>
 </body>
 </html>

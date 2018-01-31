@@ -52,78 +52,30 @@
 <div id="product">
     <div class="container">
         <div class="product_section_title">Latest Product</div>
-        <div class="product_one">
-            <div class="product_img">
-                <img src="resources/images/gambar1.jpg">
-            </div>
-            <div class="product_text">
-                <h4>Bunga 1</h4>
-            </div>
-            <div class="product_desc">
-                <b>Bunga 1</b> adalah bunga yang anu anu anu anuanuanu anuanu
-            </div>
-            <div class="product_price">
-                <div class="price">
-                    Rp.10.000
-                </div>
-                <a href="#" class="button_buy">Detail</a>
-            </div>
+        
+        <?php foreach ($posts as $item) {
 
-        </div>
-        <div class="product_one product_two">
-            <div class="product_img">
-                <img src="resources/images/gambar2.jpeg">
-            </div>
-            <div class="product_text">
-                <h4>Bunga 1</h4>
-            </div>
-            <div class="product_desc">
-                <b>Bunga 1</b> adalah bunga yang anu anu anu anuanuanu anuanu
-            </div>
-            <div class="product_price">
-                <div class="price">
-                    Rp.10.000
-                </div>
-                <a href="#" class="button_buy">Detail</a>
-            </div>
+                ?>
+                <div class="product_one">
+                    <div class="product_img">
+                    <img src="foto_produk/<?php echo $item['foto_produk']; ?>" style="min-height:175px;">
+                    </div>
+                    <div class="product_text">
+                        <h4><?php echo $item['nama_produk']; ?></h4>
+                    </div>
+                    <div class="product_desc">
+                        <!-- <b>Bunga 1</b> -->
+                        <?php echo $item['deskripsi']; ?>
+                    </div>
+                    <div class="product_price">
+                        <div class="price">
+                            <?php echo "Rp ". number_format($item['harga'],0,".","."); ?>
+                        </div>
+                        <a href="index.php/produk/detailProdukAdmin/<?php echo $item['id_produk']; ?>" class="button_buy">Detail</a>
+                    </div>
 
-        </div>
-        <div class="product_one product_three">
-            <div class="product_img">
-                <img src="resources/images/gambar2.jpeg">
-            </div>
-            <div class="product_text">
-                <h4>Bunga 1</h4>
-            </div>
-            <div class="product_desc">
-                <b>Bunga 1</b> adalah bunga yang anu anu anu anuanuanu anuanu
-            </div>
-            <div class="product_price">
-                <div class="price">
-                    Rp.10.000
                 </div>
-                <a href="#" class="button_buy">Detail</a>
-            </div>
-
-        </div>
-        <div class="product_one product_four">
-            <div class="product_img">
-                <img src="resources/images/gambar2.jpeg">
-            </div>
-            <div class="product_text">
-                <h4>Bunga 1</h4>
-            </div>
-            <div class="product_desc">
-                <b>Bunga 1</b> adalah bunga yang anu anu anu anuanuanu anuanu
-            </div>
-            <div class="product_price">
-                <div class="price">
-                    Rp.10.000
-                </div>
-                <a href="#" class="button_buy">Detail</a>
-            </div>
-
-        </div>
+                <?php } ?>
     </div>
 </div>
 <div id="bannerAbout">

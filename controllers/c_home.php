@@ -10,6 +10,7 @@ Class HomeController{
 	}
 	public function homeAdmin(){
 		if (isset($_SESSION['login_user'])) {
+			$posts=Produk::lihatProdukBaru();
 			require_once("views/admin/homeAdmin.php");
 		}
 		else{
