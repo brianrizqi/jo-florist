@@ -6,7 +6,6 @@
     <link href="resources/css/product.css" rel="stylesheet" type="text/css">
     <link href="resources/css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
-    <link rel="icon" href="resources/images/favicon.png">
     <title></title>
 </head>
 <body>

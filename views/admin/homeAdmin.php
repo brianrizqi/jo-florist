@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <script src="resources/js/jquery-3.2.1.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
-    <link rel="icon" href="resources/images/favicon.png">
     <title>Home Admin</title>
 </head>
 <body>
@@ -43,7 +42,7 @@
 
         <h1>Welcome to Jo-Florist</h1>
         <h2>Do you want to buy?</h2>
-        <a href="productAdmin.html" class="btn-link">Learn More</a>
+        <a href="index.php/produk/lihatProduk" class="btn-link">Learn More</a>
 
     </div>
 

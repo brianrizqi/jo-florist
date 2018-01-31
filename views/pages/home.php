@@ -14,7 +14,6 @@
     function hideURLbar() {
         window.scrollTo(0, 1);
     } </script>
-    <link rel="icon" href="resources/images/favicon.png">
     <title>Jo-Florist</title>
 </head>
 <body>
@@ -70,7 +69,7 @@
 
         <h1>Welcome to Jo-Florist</h1>
         <h2>Do you want to buy?</h2>
-        <a href="product.html" class="btn-link">Learn More</a>
+        <a href="index.php/produk/semuaProduk" class="btn-link">Learn More</a>
 
         <!--</div>-->
 

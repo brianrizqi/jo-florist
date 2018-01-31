@@ -33,7 +33,7 @@ session_start();
  -->
 
 
-
+    <link rel="icon" href="resources/images/favicon.png">
 
 
 </head>

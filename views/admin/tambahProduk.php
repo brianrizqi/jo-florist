@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <script src="resources/js/jquery-3.2.1.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
-    <link rel="icon" href="resources/images/favicon.png">
     <title></title>
 </head>
 <body>
